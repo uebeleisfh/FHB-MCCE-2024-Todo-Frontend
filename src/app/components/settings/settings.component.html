@@ -1,0 +1,32 @@
+<h2>AWS Region</h2>
+<mat-form-field class="full-width" appearance="fill">
+    <mat-label>aws_region</mat-label>
+    <input matInput [(ngModel)]="awsConfig.region">
+</mat-form-field>
+<h2>AWS Access Key Id</h2>
+<mat-form-field class="full-width" appearance="fill">
+    <mat-label>aws_access_key_id</mat-label>
+    <input matInput [(ngModel)]="awsConfig.accessKeyId">
+</mat-form-field>      
+<h2>AWS Secret Access Key</h2>    
+<mat-form-field class="full-width" appearance="fill">
+    <mat-label>aws_secret_access_key</mat-label>
+    <input matInput [(ngModel)]="awsConfig.secretAccessKey">
+</mat-form-field>  
+<h2>AWS Session Token</h2>
+<mat-form-field class="full-width" appearance="fill">
+    <mat-label>aws_session_token</mat-label>
+    <textarea matInput [(ngModel)]="awsConfig.sessionToken">
+    </textarea>
+</mat-form-field>
+<p>
+    <button mat-raised-button color="primary" (click)="saveConfiguration()">
+        Save configuration
+    </button>
+</p>
+<h2>Test Configuration</h2>
+<p>
+    <button mat-raised-button color="primary" (click)="runConfigurationTest()">
+        Run Configuration Test
+    </button>
+</p>

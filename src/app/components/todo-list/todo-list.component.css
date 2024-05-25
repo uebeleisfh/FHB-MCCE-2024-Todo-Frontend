@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.addButtonContainter {
+    width:100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.addButton {
+    margin-bottom: 10px;
+    width: 84px;
+    height: 84px;
+    visibility: visible;
+}

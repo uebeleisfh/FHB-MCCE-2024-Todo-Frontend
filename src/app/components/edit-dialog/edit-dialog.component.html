@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>
+  {{ data.newItem ? "Add Item: " : "Edit Item: " }}"{{ data.item.name }}"
+</h1>
+<div mat-dialog-content>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.item.name" />
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label>Description</mat-label>
+    <input matInput [(ngModel)]="data.item.description" />
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label>State</mat-label>
+    <mat-select [(value)]="data.item.state" placeholder="Define item state">
+      <mat-option [value]="itemState.Open">
+        {{ itemState[itemState.Open] }}
+      </mat-option>
+      <mat-option [value]="itemState.Doing">
+        {{ itemState[itemState.Doing] }}
+      </mat-option>
+      <mat-option [value]="itemState.Done">
+        {{ itemState[itemState.Done] }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button cdkFocusInitial [mat-dialog-close]="null">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.item">Save</button>
+</div>

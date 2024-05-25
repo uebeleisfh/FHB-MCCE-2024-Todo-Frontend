@@ -1,0 +1,41 @@
+.actionButton {
+    margin: auto 5px auto 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardContentContainer {
+    width: calc(100% - 132px);
+}
+
+.description {
+    display: inline-block;
+    word-wrap: break-word;
+    width: 90%
+}
+
+.badge {
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.Open {
+    background-color: #3f51b5;
+}
+
+.Doing {
+    background-color: #ff4081;
+}
+
+.Done {
+    background-color: #2E7D32;
+}  

@@ -1,0 +1,21 @@
+<div #itemContainer>
+    <mat-card class="cardContainer">
+        <div class="cardContentContainer">
+            <mat-card-title>{{item.name}}</mat-card-title>
+            <mat-card-subtitle>
+                <span class="badge {{getStateText()}}">{{getStateText()}}</span>
+            </mat-card-subtitle>
+            <mat-card-content>
+                <span class="description">{{item.description}}</span>
+            </mat-card-content> 
+        </div>
+        <div class="buttonContainer">
+            <button class="actionButton" mat-fab color="secondary" (click)="openEditDialog()">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button class="actionButton" mat-fab color="secondary" (click)="openDeleteDialog()">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </mat-card>
+</div>

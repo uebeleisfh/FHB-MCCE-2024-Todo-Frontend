@@ -1,0 +1,15 @@
+<div class="appContainer">
+    <mat-toolbar class="appToolbar" color="primary">
+        <button mat-icon-button [routerLink]="''">
+            <mat-icon>home</mat-icon>
+        </button>
+        <span>Todo App - Cloud Tech Rockz!</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button [routerLink]="'settings'">
+            <mat-icon>settings</mat-icon>
+        </button>
+    </mat-toolbar>
+    <div class="contentContainer">
+        <router-outlet></router-outlet>
+    </div>
+</div>

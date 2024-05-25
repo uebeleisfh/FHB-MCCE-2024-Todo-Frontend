@@ -1,0 +1,8 @@
+<div class="todoItemContainer">
+    <app-todo-item #itemComponent *ngFor="let item of items" [item]="item"></app-todo-item>
+</div>
+<div class="addButtonContainter">
+    <button mat-fab color="primary" (click)="addItem()" class="addButton">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
